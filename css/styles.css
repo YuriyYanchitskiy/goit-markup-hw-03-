@@ -36,11 +36,11 @@ body{
 }
 
 .container{
-    width: 1200px;
+    width: 1230px;
     margin-left: auto;
     margin-right: auto;
-    /* padding-left: 15px;
-    padding-right: 15px; */
+    padding-left: 15px;
+    padding-right: 15px;
     outline: 2px solid cyan;
 }
  
@@ -53,17 +53,8 @@ body{
     color: var(--title-text-color);
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
-    /* display: inline-block;
-    margin: 0px; */
-    padding-left: 0;
 }
-/* .container-nav .logo-header{
-    padding: 0;
-} */
-.container.header-main{
-    padding-left: 0px;
-    padding-right: 0;
-}
+
 /* Посилання */
 
 
@@ -82,6 +73,7 @@ body{
     list-style: none;
     padding-left: 0;
     display: block;
+    margin: 0;
 }
 
 .list-item:not(:last-child) {
@@ -105,8 +97,6 @@ body{
     padding: 0px;
     margin: 0px;
 }
-
-
 
 .list,
 .list-adress{
@@ -142,9 +132,11 @@ ul.list{
     padding-top: 32px;
     padding-bottom: 32px;
 }
-.container hero{
+.container.hero{
     margin-left: auto;
     margin-right: auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 /*посилання*/
@@ -163,7 +155,6 @@ ul.list{
 .list .portfolio.current{
     color: var(--accent-color1)
 }
-
 
 .blue,
 .studio:focus,
@@ -197,11 +188,8 @@ ul.list{
     top: 80px;
     text-align: center;
     background: var(--background);
-    /* margin-left: auto;
-    margin-right: auto; */
-    padding: 0;
-    
-    
+    margin-left: auto;
+    margin-right: auto;   
 }
 .title{
     font-weight: 900;
@@ -218,7 +206,6 @@ ul.list{
     width: 696px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 200px;
 }
 
 .button{
@@ -268,7 +255,7 @@ ul.list{
     text-transform: uppercase;
     color: var(--title-text-color);
     margin-bottom: 10px;
-    margin-top: 30px;
+    margin-top: 0px;
     width: 270px;
 }
 .paragraph-ideological,
@@ -332,19 +319,27 @@ ul.list{
 }
 .name,
 .position{
-    font-weight: 500;
+    
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
 }
 .name{
-    margin-top: 30px;
+    /* margin-top: 30px; */
     margin-bottom: 10px;
+    font-weight: 500;
+    
 }
 .position{
     margin-top: 0px;
-    margin-bottom: 16px;
+    /* margin-bottom: 16px; */
+    font-weight: 400;
+}
+.employee-and-position{
+    padding-top: 30px;
+    padding-bottom: 16px;
+    
 }
 
 .igor.box,
@@ -369,7 +364,7 @@ ul.list{
     margin-bottom: 0;
 
 }
-.lists-d:not(:last-child) {
+.lists-d .item:not(:last-child){
     margin-bottom: 9px;
 }
 
@@ -389,7 +384,6 @@ ul.list{
     /* align-items: flex-end; */
     padding-top: 60px;
     padding-bottom: 60px;
-    
 }
 .logo-footer{
     font-weight: 700;
@@ -410,13 +404,10 @@ ul.list{
     margin-top: 0;
     margin-bottom: 0;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
    
 }
-/* .liaddress,
-.limail{
-    margin-bottom: 9px;
-} */
+
 .white{
     color: var(--accent-color2);
 }
@@ -427,6 +418,7 @@ ul.list{
     letter-spacing: 0.03em;
     text-decoration: none;
     color: var(--accent-color2);
+    
 }
 .liaddress:hover,
 .liaddress:focus,
@@ -454,9 +446,6 @@ ul.list{
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
-
-    /* margin-top: 0px;
-} */
 
 .address{
     font-style: normal
@@ -490,16 +479,11 @@ ul.list{
 .buttons-portfolio .item:not(:last-child){
     margin-right: 8px;
 }
-/* .botton-all{
-    margin-right: 8px;
-} */
     
 .options{
     padding-top: 94px;
     padding-bottom: 94px;
-
 }
-
 
 .button-all,
 .button-web,
@@ -545,7 +529,6 @@ ul.list{
 .edition,
 .lab,
 .business{
-    /* box-sizing: border-box; */
     background: var(--background-color);
     border: 1px solid #EEEEEE;
 }
@@ -563,7 +546,7 @@ ul.list{
     line-height: 1.9;
     letter-spacing: 0.06em;
     color: var(--title-text-color);
-    margin: 20px 24px 4px 24px; 
+    margin: 0px 24px 4px 24px; 
 }
 .techno-text,
 .poster-text,
@@ -580,6 +563,11 @@ ul.list{
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
     margin: 0px 24px 4px 24px;
+}
+
+.text-icon{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 /* ширина ліжок */
 .techno.box,
